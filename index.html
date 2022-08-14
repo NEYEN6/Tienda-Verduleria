@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anquiara</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8c017a2eec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <!--Nav-Menu-------------------------------->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/logo-anquiara-1.png" alt="" width="120" height="90"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href="./pages/comocomprar.html">Como Comprar</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href="./pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href="./pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+                <button id="boton-carrito"><i class="fas fa-shopping-cart"></i> Carrito <span id="contadorCarrito">0</span></button>
+            </div>
+        </div>
+    </nav>
+    <!--Carrusel-1-------------------------------->
+    <div class="contenedor-carousel">
+        <div class="carousel">
+            <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+                
+            </button>
+
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="./img/1.jpg" alt="Rock and Roll Hall of Fame">
+                        <h1>ENVIO SIN CARGO</h1>
+                        <h4>En compras mayores a $1050</h4>
+                        <button><a href="./pages/tienda.html">ARMA TU PEDIDO</a> </button>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./img/3.jpg" alt="Empire State Building">
+                        <h1>ZONA DE ENTREGA</h1>
+                        <h4>Ahora llegamos a mas barrios en Zona Norte</h4>
+                        <button>MIRA HASTA DONDE LLEGAMOS</button>
+
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./img/2.jpg" alt="Empire State Building">
+                        <h1>CALIDAD Y PRECIO</h1>
+                        <h4>En la puerta de tu casa!</h4>
+                        <button><a href="./pages/tienda.html">ARMA TU PEDIDO</a> </button>
+                    </div>
+
+                </div>
+
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            </div>
+
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+    </div>
+
+    <!--Slider-------------------------------->
+    <div id="main-container" class="container">
+        <div class="row mb40">
+            <div class="slider-1 col-xs-12 col-sm-6 col-md-6  col-lg-4 ">
+                <div class="col-sm-3">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="col-sm-9 texto-monstserrat border-izq" style="font-size: 18px">
+                    ENVÍO SIN CARGO
+                    <BR>a partir de $1050
+                </div>
+            </div>
+
+            <div class="slider-2 col-xs-12 col-sm-6 col-md-6  col-lg-4">
+                <div class="col-sm-3">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <div class="col-sm-9 texto-monstserrat border-izq" style="font-size: 18px;">
+                    PRODUCTOS FRESCOS
+                    <BR><small><a href="./pages/tienda.html" style="text-decoration:none; color:#ffffff; font-size: 15px">Empezá a comprar 
+                </a></small>
+                </div>
+            </div>
+
+            <div class="slider-3 col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="col-sm-3">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <div class="col-sm-9 texto-monstserrat border-izq" style="font-size: 18px">
+                    VENTA MAYORISTA
+                    <BR><small><a href="./pages/contact.html" target="_blank" style="text-decoration:none; color:#ffffff; font-size: 15px">Consultar ahora 
+                </a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--carrusel-ofertas-------------------------------->
+    <div id="contenedor-productos" class="carrusel-ofertas">
+        <h1>PRODUCTOS DESTACADOS</h1>
+        <div class="carousel">
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+
+
+                </div>
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Carrito-------------------------------->
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="finalizar-compra" class="boton-comprar">Finalizar Compra</button>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <!--Footer-------------------------------->
+    <footer id="footer"></footer>
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./javascript/ofertas.js"></script>
+
+    <script defer src="../javascript/modal.js"></script>
+    <script src="./javascript/index.js"></script>
+
+</body>
+
+</html>
